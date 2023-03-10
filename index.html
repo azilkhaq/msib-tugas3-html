@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Blog Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #768052;
+            color: #fff;
+            padding: 20px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #768052;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .banner {
+            position: relative;
+            height: 500px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            margin: 70px;
+            padding: 20px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+        }
+
+        .col-md-8 {
+            width: 66.66666667%;
+        }
+
+        .col-md-4 {
+            width: 33.33333333%;
+        }
+
+        .content-p {
+            line-height: 2.2;
+            text-align: justify;
+            padding-right: 55px;
+        }
+        
+        .forest {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .title {
+            border-bottom: 2px solid #000;
+	        max-width: 150px;
+            line-height: 2.0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="banner">
+                <img src="image/banner.jpg" alt="Banner" />
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="title">Title</h1>
+                    <p class="content-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
+                </div>
+                <div class="col-md-4">
+                    <img class="forest" src="image/forest.jpeg" alt="Forest">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Footer</p>
+    </footer>
+
+</body>
+
+</html>
